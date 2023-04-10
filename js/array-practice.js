@@ -184,3 +184,167 @@
 // }
 
 // console.log(invertedString);
+
+
+
+
+// // =====================================================
+// Створіть масив genres з елементами «Jazz» та «Blues».
+//1. Додайте «Рок-н-рол» до кінця.
+//2. Виведіть у консоль перший елемент масиву.
+//3. Виведіть у консоль останній елемент масиву. Код повинен працювати для масиву довільної довжини.
+//4. Видаліть перший елемент та виведіть його в консоль.
+//5. Вставте «Country» та «Reggae» на початок масиву.
+
+// const genres = ["Jazz", "Blues"];
+
+// genres.push("Рок-н-рол");
+// console.log(genres);
+
+
+// console.log(genres[0]);
+
+// console.log(genres[genres.length - 1]);
+
+
+
+//! ================================================
+
+//* Example 2 - Масиви та рядки
+// Напиши скрипт для обчислення площі прямокутника зі сторонами, значення яких зберігаються у змінній values у вигляді рядка. Значення гарантовано розділені пробілом.
+
+// const values = "8 3";
+// const valuesArray = values.split(" ");
+// const a = Number(valuesArray[0]);
+// const b = Number(valuesArray[1]);
+// const square = a * b;
+// console.log(square);
+
+
+//* Example 3 - Перебір масиву
+
+// Напиши скрипт для перебору масиву fruits циклом for. Для кожного елемента масиву виведи в консоль рядок у форматі номер_елемента: значення_елемента. Нумерація елементів повинна починатися з 1.
+
+// const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   console.log(`${i + 1}: ${fruits[i]}`);
+// }
+
+
+
+//! ================================================
+
+//* Example 5 - Масиви та рядки
+// Напиши скрипт, який виводить у консоль усі слова рядка крім першого і останнього. Результуючий рядок не повинен починатися або закінчуватися символ пробілу. Скрипт повинен працювати для будь-якого рядка.
+
+// const string = "Welcome to the future"; // to the
+/*
+1. переводимо рядок у масив з розділенням " "
+2. видалити перший елемент масиву і останній
+3. перевести масив назад до строки з розділенням " "
+*/
+
+// const strArray = string.split(" ");
+// strArray.shift();
+// strArray.pop();
+// const newString = strArray.join(" ");
+
+// console.log(newString);
+
+
+//! ================================================
+
+//* Example 6 - Масиви та рядки
+// Напиши скрипт, який «розгортає» рядок (зворотний порядок букв) і виводить його в консоль.
+
+// const string = "Welcome to the future";
+// const reversedStr = string.split("").reverse().join("");
+// console.log(reversedStr);
+
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const fruitsArrayLength = fruits.length;
+// console.log(fruits.length);
+
+
+//! ================================================
+
+// function splitMessage(message, delimiter) {
+//   let words = message.split(delimiter);
+
+//   return words;
+// }
+
+// console.log(splitMessage("Mango hurries to the train", " "));
+// console.log(splitMessage("Mango", ""));
+
+
+//! ================================================
+
+// function calculateEngravingPrice(message, pricePerWord) {
+
+//     let messageArray = message.split(" ");
+//     let sum = messageArray.length * pricePerWord;
+
+//     console.log("${message} ${sum}");
+//     return sum;
+// }
+
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// console.log(calculateEngravingPrice("Web-development is creative work", 40));
+
+
+//! ================================================
+// function makeStringFromArray(array, delimiter) {
+//   let string = array.join(delimiter);
+
+//   return string;
+// }
+
+// console.log(
+//   makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ")
+// );
+
+
+
+//! ================================================
+
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+
+
+// const firstTwoEls = fruits.slice(0, 2);
+
+// const nonExtremeEls = fruits.slice(1, 4);
+
+// const lastThreeEls = fruits.slice(-3);
+
+class User {
+    email;
+
+
+
+  get email() {
+    return this.email;
+  }
+
+  set email(newEmail) {
+    this.email = newEmail;
+  }
+}
+
+class Admin extends User {
+  // Change code below this line
+constructor ({email, accessLevel}){
+super(email);
+this.accessLevel = accessLevel;}
+
+  // Change code above this line
+}
+
+const mango = new Admin({
+  email: "mango@mail.com",
+  accessLevel: Admin.AccessLevel.SUPERUSER,
+});
+
+console.log(mango.email); // "mango@mail.com"
+console.log(mango.accessLevel); // "superuser"
