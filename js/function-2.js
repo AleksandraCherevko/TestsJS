@@ -86,3 +86,140 @@
 
 
 // ====================================================================
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   // Change code above this line
+//   console.log(total);
+//   return total;
+// }
+
+
+
+// calculateTotalPrice([12, 85, 37, 4]);
+
+
+
+
+// ====================================================================
+
+// function findLongestWord(string) {
+//   // Change code below this line
+//   const stringSplit = string.split(" ");
+//   let longestWord = " ";
+
+//   for (const word of stringSplit) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
+
+//   return longestWord;
+//   // Change code above this line
+// }
+
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+
+
+
+// ====================================================================
+
+// function createArrayOfNumbers(min, max) {
+//     const numbers = [];
+
+
+//     for (let i = min; i <= max; i += 1) {
+//        numbers.push(i);
+//     }
+
+//      return numbers;
+// }
+
+
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(29, 34));
+
+
+// ====================================================================
+
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+
+//   const newArray = [];
+//   for (i = 0; numbers.length > i; i += 1) {
+//     if (numbers[i] > value) {
+//       newArray.push(numbers[i]);
+//     }
+//   }
+
+//   return newArray;
+//   // Change code above this line
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
+
+// ====================================================================
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+// return fruits.includes(fruit);
+
+//   return; 
+// } 
+
+// console.log(checkFruit("mandarin"));
+
+
+
+
+// ====================================================================
+
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (let num of numbers) {
+//     if (num > value) {
+//       filteredNumbers.push(num);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
+// ====================================================================
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   // Change code above this line
+//   console.log(total);
+//   return total;
+// }
+
+
+// calculateTotalPrice([412, 371, 94, 63, 176]);
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  rating: 8.38,
+};
+
+const entries = Object.entries(book);
+console.log(entries);
