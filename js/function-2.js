@@ -215,11 +215,11 @@
 
 // calculateTotalPrice([412, 371, 94, 63, 176]);
 
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  rating: 8.38,
-};
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
 
-const entries = Object.entries(book);
-console.log(entries);
+// const entries = Object.entries(book);
+// console.log(entries);
